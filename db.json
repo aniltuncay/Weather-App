@@ -1,0 +1,17 @@
+{
+  "posts": [
+    { "id": 1, "title": "title-one", "author": "aniltuncay" },
+    { "id": 2, "title": "title-two", "author": "aniltuncay" },
+    { "id": 3, "title": "title-three", "author": "aniltuncay" },
+    { "id": 4, "title": "title-four", "author": "aniltuncay" }
+  ],
+  "comments": [
+    { "id": 1, "body": "comments here", "postId": 1 },
+    { "id": 2, "body": "some other comments here", "postId": 4 }
+  ],
+  "profile": [
+    { "name": "aniltuncay" },
+    { "name": "aniltuncay" },
+    { "name": "aniltuncay" }
+  ]
+}

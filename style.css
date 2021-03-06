@@ -1,0 +1,202 @@
+body {
+    background-color: #20CEBF;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.search-input {
+    display: flex;
+    width: 60%;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.search-input .search-form {
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    outline: none;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+}
+
+.search-button {
+    color: white;
+    background-color: #20CEBF;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+
+.converter {
+    width: 8%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid white;
+}
+
+.converter span {
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.daily {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    justify-content: space-between;
+}
+
+.dailyToday {
+    display: flex;
+    flex-direction: column;
+}
+
+.dailyHeader {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dailyInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dailyDay {}
+
+.dailyTemperature {
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.dailyDegree {
+    font-size: 90px;
+    line-height: 68px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.dailySymbol {
+    font-size: 10px;
+    width: 1em;
+    height: 1em;
+    border-radius: 100%;
+    border: 2px solid #ffffff;
+}
+
+.dailyFooter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 35px;
+}
+
+.dailyCity {
+    color: #FFFFFF;
+    opacity: 1;
+    font-size: 27px;
+}
+
+.hourly {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.hourlyInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    align-items: center;
+}
+
+.hourlyResult {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 80px;
+    height: 120px;
+    background: #1A20214D;
+    border-radius: 40px;
+    opacity: 1;
+}
+
+.hourlyResult.hourlyResult--active {
+    background: #FFFFFF99;
+}
+
+.hourlyTemperature {
+    display: flex;
+    margin-top: 8px;
+    justify-content: center;
+}
+
+.hourlyDegree {
+    font-size: 26px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.hourlySymbol {
+    font-size: 5px;
+    width: 1em;
+    height: 1em;
+    border-radius: 100%;
+    border: 2px solid #ffffff;
+}
